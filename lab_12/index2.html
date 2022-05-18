@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="myFunction()">Нажмите кнопку для замены текста страницы</button>
+    <br />
+    <a id="demo" href="index2.html">Изначальный текст</a>
+    <script>
+        function myFunction() {
+            var str_ = "Произошла замена ссылки";
+            document.getElementById("demo").innerText = str_;
+            document.getElementById("demo").setAttribute("href", "https://google.com");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<HTML>
+
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE>Язык разметки гипертекста HTML </TITLE>
+</HEAD>
+
+<BODY bgcolor=#FFF8DC text=#800000>
+
+    <!--список -->
+    <OL TYPE="i" START="100">
+        <LI> Зима </LI>
+        <LI> Весна </LI>
+        <LI> Лето </LI>
+        <UL TYPE="square">
+            <LI> Июнь
+            <LI> Июль
+            <LI> Август
+        </UL>
+        <LI> Осень </LI>
+    </OL>
+    <!-- таблица-->
+    <table border="1px" align=left>
+        <tbody>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td rowspan="3"> </td>
+                <td rowspan="3"> </td>
+                <td> </td>
+                <td> </td>
+
+            </tr>
+            </thead>
+            <tr>
+                <td colspan="2"> </td>
+                <td colspan="2"> </td>
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+        </tbody>
+    </table>
+    <br></br>
+
+    <form method="get" action="index.html">
+        <!-- область с текстом -->
+        <textarea rows="5" cols="33">Города: Омск, Новосибирск, Томск</textarea>
+        <p>
+            <!--форма -->
+            <input type="radio" name="Омск" />Омск
+            <br>
+            <input type="radio" checked name="Новосибирск" />Новосибирск
+            <br>
+            <input type="radio" name="Томск" />Томск
+        </p>
+        <input type="password" value="Томск" />
+    </form><br />
+
+    <!--кнопки -->
+    <form method="POST" enctype="multipart/form-data">
+        <select name="choice">
+            <option value="first">Омск</option>
+            <option value="second" selected>Новосибирск</option>
+            <option value="third">Томск</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="window.location.href='mailto:nomail@noreply.ru';" value="Отправить" />
+
+        <input type="button" onclick="window.location.href='file://index.html';" value="Сбросить" />
+        </p>
+    </form>
+</BODY>
+</HTML>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        class Computer {
+            model;
+            producer;
+            price;
+            constructor(model, producer, price) { 
+                this.model = model
+                this.producer = producer
+                this.price = price
+            }
+        }
+        let pc = new Computer("Ryzen 5600X", "AMD", "140.000 ₽");
+        document.write("Модель = " + pc.model + "<br>");
+        document.write("Производитель = " + pc.producer + "<br>");
+        document.write("Цена = " + pc.price + "<br>");
+    </script>
+</body>
+
+</html>
